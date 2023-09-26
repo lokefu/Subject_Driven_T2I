@@ -1,0 +1,88 @@
+-rank: rank and filter
+-RWi2i: i2i with runway ckpt
+
+
+-Autodl:
+source /etc/network_turbo
+
+parser.add_argument("--num_img", type = int, default = 5)
+parser.add_argument("--data_dir", type = str, default = '00.jpg')
+parser.add_argument("--steps", type = int, default = 30, help="denoising steps.")
+parser.add_argument("--guidance", type = int, default = 3, help="A higher guidance scale \
+                    value encourages the model to generate images closely linked to the \
+                    text prompt at the expense of lower image quality. Guidance scale is \
+                    enabled when guidance_scale > 1.")
+#guidance: guidance from text
+parser.add_argument("--folder_name", type=str, default='SD_aug',help="Path to generated images.")
+parser.add_argument("--label", type = str, default = '')
+parser.add_argument("--strength", type = float, default = 0.2)
+#strength: noise to add: 1 is max - ignore input image with all noise
+
+-linux command script
+
+python RWi2i.py --num_img 21 --steps 30 --guidance 1 --data_dir vase1.jpg --strength 0.1 --label vase --folder_name RWi2i-vase1
+
+python rank.py --data_dir vase1.jpg --folder_name RWi2i-vase1 --threshold 0.8
+
+max 21 for no text prompt
+max 12 for no text prompt
+
+
+-history
+--痛过文本改动：颜色...
+data augmentation prompt template
+label, guidance
+--- vase
+----No prompt:
+python RWi2i.py --num_img 21 --steps 30 --guidance 1 --data_dir vase1.jpg --strength 0.1 --label vase --folder_name vase1
+
+python rank.py --data_dir vase1.jpg --folder_name vase1 --threshold 0.8
+
+----with prompt: guidance vs strength (prompt higher larger, strength higher noisier)
+
+python RWi2i.py --num_img 12 --steps 30 --guidance 7.5 --data_dir vase1.jpg --strength 0.7 --label "a vase in the jungle" --folder_name vase1_jungle
+
+python rank.py --data_dir vase1.jpg --folder_name vase1_jungle --threshold 0.8
+
+
+python RWi2i.py --num_img 12 --steps 30 --guidance 7.5 --data_dir vase1.jpg --strength 0.5 --label "a vase on the beach" --folder_name vase1_beach
+
+python rank.py --data_dir vase1.jpg --folder_name vase1_beach --threshold 0.8
+
+
+python RWi2i.py --num_img 12 --steps 30 --guidance 7.5 --data_dir vase1.jpg --strength 0.3 --label "a vase on the beach" --folder_name vase1_beach
+
+python rank.py --data_dir vase1.jpg --folder_name vase1_beach --threshold 0.8
+
+**strength = 0.5, able to modify the image; 
+
+python RWi2i.py --num_img 12 --steps 30 --guidance 7.5 --data_dir vase1.jpg --strength 0.3 --label "a vase on the beach" --folder_name vase1_beach
+
+python rank.py --data_dir vase1.jpg --folder_name vase1_beach --threshold 0.8
+
+
+python RWi2i.py --num_img 12 --steps 30 --guidance 7.5 --data_dir vase1.jpg --strength 0.3 --label "a shiny vase" --folder_name vase1_shiny
+
+python rank.py --data_dir vase1.jpg --folder_name vase1_shiny --threshold 0.8
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
