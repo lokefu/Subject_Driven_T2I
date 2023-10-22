@@ -1,0 +1,16 @@
+rank: rank and filter
+IwSD: image variation with stable diffusion ckpt
+SDIV: image variation with lambda lab ckpt
+RWi2i: i2i with runway ckpt
+i2i: i2i with stable diffusion ckpt
+
+
+-ref
+i2i:
+https://huggingface.co/docs/diffusers/api/pipelines/stable_diffusion/img2img
+
+Autodl:
+source /etc/network_turbo
+
+-RWi2i
+python RWi2i.py --num_img 21 --steps 30 --guidance 1 --data_dir vase1.jpg --strength 0.1 --label vase --folder_name RWi2i-vase1

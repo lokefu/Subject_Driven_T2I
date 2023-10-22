@@ -1,0 +1,42 @@
+Class: dog (live subject)
+
+
+Captions:
+-blip2
+--0: a small brown and white dog sitting on an orange background
+--1: a small brown and white dog sitting on an orange background
+--2: a small brown and white dog sitting on an orange background
+--3: a small brown and white dog sitting on an orange background
+--4: a small brown and white dog sitting on a yellow background
+
+-instructblip-long
+--0: The dog in the image is a small, brown and white corgi puppy. It is sitting on an orange background with a green leaf behind it. The color of the dog's fur is light brown, which contrasts well against the orange background. Additionally, its tongue can be seen sticking out of its mouth as it poses for the camera.
+--1: The dog in the image is a small, brown and white corgi with large ears. It appears to be sitting on an orange background, which gives it a bright and cheerful appearance. The color of the dog's fur can be seen through its dark brown coat, which contrasts well against the orange background. Additionally, the dog has a soft texture that makes it easy to hold and interact with. Overall, the dog in the image looks friendly and playful, making it a great addition to any family or household.
+--2: The dog in the image is a small, brown and white corgi puppy that is sitting on an orange background. It has a round face with a wide-eyed expression, which can be seen clearly in the image. The color of the dog's fur is light brown, which contrasts well against the orange background. Additionally, the dog appears to be relaxed and comfortable as it gazes at the camera.
+--3: The dog in the image is a small, brown and white corgi puppy that is sitting on an orange background. It appears to be playful and energetic, with its mouth wide open and its tongue sticking out of its mouth. The color of the dog's fur is light brown, which contrasts well against the orange background. Additionally, the dog has a soft, fluffy coat that gives it a cuddly appearance.
+--4: The dog in the image is a small, brown and white corgi puppy that is sitting on a yellow background. It has a round face with large ears, which gives it a playful and friendly appearance. The color of the dog's fur appears to be light brown or grayish-brown, giving it a distinctive look. Additionally, its facial features appear to be well-defined and prominent, making it stand out from the rest of the dogs in the scene.
+
+-LLaVa
+--0: The image features a small, cute, and adorable dog sitting on a bright orange background. The dog is a Pembroke Welsh Corgi, a breed known for its short legs, long body, and distinctive appearance. The dog has a fluffy, thick coat that gives it a soft and cuddly appearance. Its fur is a mix of brown and white, which creates a unique and visually appealing color pattern. The dog is sitting on the ground, with its head turned to the side, and it appears to be looking at something. Its ears are perked up, and its eyes are wide open, giving it a curious and alert expression. The dog's overall appearance is endearing and charming, making it an appealing subject for a photograph.
+--1: The dog in the image is a small, fluffy, and adorable Pembroke Welsh Corgi. It has a white and brown color pattern, with a white body and brown head. The dog's fur is thick and fluffy, giving it a cute and cuddly appearance. It is sitting on a bright orange background, which contrasts with its light brown fur. The dog's pose is playful and curious, with its ears perked up and its head tilted to one side. Its eyes are bright and expressive, adding to its endearing and friendly demeanor. Overall, the dog's appearance is charming and inviting, making it a delightful sight for anyone who loves dogs.
+--2: The dog in the image is a small, fluffy Pembroke Welsh Corgi with a white and brown coat. It has a cute, friendly appearance, with a long body and short legs, which are characteristic of the breed. The dog is sitting on an orange background, which creates a vibrant contrast against its fur. Its fur is soft and fluffy, giving it a cuddly and adorable appearance. The dog's pose is sitting on its hind legs, which adds to its playful and endearing demeanor. Overall, the dog in the image is a small, cute, and friendly Pembroke Welsh Corgi with a soft and fluffy coat, sitting on an orange background.
+--3: The dog in the image is a small, cute, and adorable Pembroke Welsh Corgi. It has a short, thick, and fluffy coat, which is characteristic of the breed. The dog's fur is a mix of brown and white, with the brown being the dominant color. The dog's ears are floppy and long, which adds to its endearing appearance. The dog is sitting on a bright orange background, which contrasts with its fur and creates a visually appealing composition. The dog's pose is relaxed, with its head down and its tongue sticking out, which gives the impression that it is enjoying itself. Overall, the dog's appearance is charming, and its small size and fluffy coat make it an irresistible companion for anyone who loves dogs.
+--4: The dog in the image is a small, fluffy, and adorable Pembroke Welsh Corgi. It has a white and red coat, which gives it a unique and striking appearance. The dog is sitting on a yellow background, which creates a contrasting and visually appealing setting. The dog's fur is soft and fluffy, which adds to its cute and cuddly appearance. The dog's pose is sitting on its hind legs, which is a common and endearing pose for dogs. Overall, the dog's appearance is charming, and its small size and fluffy coat make it an irresistible and lovable companion.
+
+-blip
+--0: there is a small brown and white dog sitting next to a green bag
+--1: there is a small brown and white dog sitting on an orange surface
+--2: there is a small brown and white dog sitting on an orange surface
+--3: there is a small brown and white dog sitting on an orange background
+--4: there is a small brown and white dog sitting on a yellow surface
+
+-instructblip-short
+--0: a small brown and white puppy on an orange background
+--1: a corgi puppy sitting in front of an orange background
+--2: a brown and white puppy sitting in front of an orange background
+--3: a small brown and white puppy on an orange background
+--4: a brown and white puppy sitting in front of a yellow background
+
+
+
+
