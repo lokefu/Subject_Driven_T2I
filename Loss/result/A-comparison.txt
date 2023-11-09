@@ -1,0 +1,74 @@
+--prompt fidelity, especially for background change, original baseline or +aug failed to back
+dog:
+beach
+cobblestone street
+
+--freestyle/imagination
+dog:
+city, on the grass
+wooden_floor, close to the grass
+new santa hat style especially for dog
+
+vase:
+water, have to have a plate under the vase if it is float
+beach3, with another thing
+
+--variaty from the prompt
+dog:
+mountain, with snow or not
+santa, different wearning way
+
+vase:
+different position, situation
+
+--change action (data aug failed)
+dog:
+beach
+
+--subject/object fidelity
+kept in aug, minimize the influence of loss, no clear influence on performance (originally want to use l2 to balance the tradeoff between prompt fidelity and class fidelity, but l2 failed, but the result from experiment shows no clear influence
+
+--applicatin
+-> creation/innovation -> new things/ways, Creative Art and Design
+dog:
+new santa hat style especially for dog
+vase:
+jungle-good
+(Creative Art and Design: Text-to-image generation techniques have been explored for generating artistic or creative visuals based on textual prompts. Artists and designers can leverage these techniques to explore new ideas, generate concept art, or assist in the creative process.)
+-> style transfer, artistic work
+
+
+
+---
+Comparison-realistic/prompt fidelity
+dog:
+snow
+jungle, unrealistic
+city
+
+Comparison-position, the subject's diversity, including position, action
+dog:
+snow
+jungle, unrealistic
+city,
+
+
+
+--failure cases
+dog:
+mountain, the dog change
+
+vase:
+effiel towerl, recognize, generate effiel, but just 'add', the real surrounding of effiel is wrong, -> positional misundertanding
+
+------------------
+
+
+better prompt control, subject action can be different, 
+
+the background, i.e., the requirement background from the prompt is more realistic
+
+failure case: focus on subject fidelity
+
+
+
