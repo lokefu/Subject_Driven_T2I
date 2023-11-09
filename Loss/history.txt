@@ -1,0 +1,70 @@
+-loss.py
+compute the cosine similarity loss (1-similarity) between text and images
+To be combined with the KL-divengence loss of each denoising step in SD as the new loss function
+
+-new_loss.py
+the update loss into lora-DB pipeline
+
+-checkpoint for loss
+model_base: baseline for dreambooth
+model_l1: iteratively add l1 for each 100 steps
+model1: add l1 for last half steps
+
+
+--setup
+
+https://www.codewithgpu.com/i/CrazyBoyM/dreambooth-for-diffusion/dreambooth-for-diffusion
+
+source /etc/network_turbo
+
+python tools/ckpt2diffusers.py ./ckpt_models/sd_1-5.ckpt ./model
+
+--- train_object.sh
+export INSTANCE_DIR="./datasets/test3"
+
+  --instance_prompt="a photo of sxc dog" \
+  --class_prompt="a photo of dog" \
+  --num_class_images=20 \
+  --max_train_steps=10 \
+  --save_model_every_n_steps=10
+
+base:
+  --num_class_images=200 \
+  --max_train_steps=1000 \
+  --save_model_every_n_steps=300
+
+-- run
+source /etc/network_turbo
+
+sh train_object.sh
+
+python test_model.py
+
+
+# 清理文件的示例
+rm -rf ./model # 删除当前目录model文件/文件夹
+rm -rf ./new_* # 删除当前目录所有new_开头的模型文件夹
+rm -rf ./datasets/test2 #删除datasets中的test2数据集 
+
+
+
+# 清理loss
+rm -rf ./new_l1*
+rm -rf ./denoised*
+
+#base_dog baseline generated images
+
+
+#loss
+l1 0.7 0.35
+loss 0.1-0.3
+try l1 weight w1 from 0.1 to 1
+try when to add loss
+## w1 0.5, half steps
+
+why l1 loss keeps around 0.71-0.72
+	image -> caption ~ original caption ()
+
+#100 without l1, 100 with l1
+
+
